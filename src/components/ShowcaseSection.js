@@ -26,7 +26,7 @@ const ShowcaseSectionS = styled.div`
   font-family: 'Roboto Slab', serif;
   color: rgb(43, 24, 56);
   background: white;
-  background-image: url(${bg});
+  /* background-image: url(${bg}); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

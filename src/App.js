@@ -2,8 +2,10 @@ import Footer from './components/Footer';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 import Work from './pages/Work';
+import Contact from './pages/Contact';
 //
 import { Switch, Route } from 'react-router-dom';
+import About from './pages/About';
 
 function App() {
   return (
@@ -18,9 +20,13 @@ function App() {
           <Work />
         </Route>
 
-        {/* About */}
+        <Route path='/about'>
+          <About />
+        </Route>
 
-        {/* Contact */}
+        <Route path='/contact'>
+          <Contact />
+        </Route>
       </Switch>
 
       <Footer />

@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const WorkSection = () => {
+const ContactSection = () => {
   return (
-    <WorkSectionS>
-      <h2>RECENT GAMES AND MEDIA</h2>
-    </WorkSectionS>
+    <ContactSectionS>
+      <h2>CONTACT US</h2>
+    </ContactSectionS>
   );
 };
 
-const WorkSectionS = styled.div`
+const ContactSectionS = styled.div`
   background: white;
   margin: 0;
   padding: 0;
@@ -30,4 +30,4 @@ const WorkSectionS = styled.div`
   }
 `;
 
-export default WorkSection;
+export default ContactSection;

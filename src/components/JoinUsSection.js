@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const WorkSection = () => {
+const JoinUsSection = () => {
   return (
-    <WorkSectionS>
-      <h2>RECENT GAMES AND MEDIA</h2>
-    </WorkSectionS>
+    <JoinUsSectionS>
+      <h2>JOINING US</h2>
+    </JoinUsSectionS>
   );
 };
 
-const WorkSectionS = styled.div`
+const JoinUsSectionS = styled.div`
   background: white;
   margin: 0;
   padding: 0;
@@ -30,4 +30,4 @@ const WorkSectionS = styled.div`
   }
 `;
 
-export default WorkSection;
+export default JoinUsSection;
