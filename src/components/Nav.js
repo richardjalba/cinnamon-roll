@@ -25,14 +25,12 @@ const Nav = () => {
               <Link to=''>Instagram</Link>
             </li> */}
             <li>
-              <Link>
-                <a href='https://www.kickstarter.com/projects/440368091/legends-and-lore-the-vr-5e-compatible-role-playing-game'>
-                  KICKSTARTER
-                </a>
-              </Link>
+              <a href='https://www.kickstarter.com/projects/440368091/legends-and-lore-the-vr-5e-compatible-role-playing-game'>
+                KICKSTARTER
+              </a>
             </li>
             <li>
-              <Link to=''>EMAIL LIST</Link>
+              <Link to='/'>EMAIL LIST</Link>
             </li>
           </ul>
         </div>
