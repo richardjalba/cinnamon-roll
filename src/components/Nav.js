@@ -1,12 +1,17 @@
 import { React } from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 //
 import { Link } from 'react-router-dom';
 //
 import headerlogo from '../img/cinnamon-header.jpg';
 
 const Nav = () => {
+  const toggleNav = document.getElementById('main-nav');
+
+  function clickHandler() {
+    toggleNav.classList.toggle('active');
+  }
+
   return (
     <StyledNav>
       <div>
@@ -16,6 +21,12 @@ const Nav = () => {
       </div>
 
       <div id='nav-container'>
+        <div onClick={clickHandler} className='toggle' id='smallnav'>
+          <span className='bar'></span>
+          <span className='bar'></span>
+          <span className='bar'></span>
+        </div>
+
         <div id='capture-nav'>
           <ul>
             {/* <li>
@@ -59,6 +70,7 @@ const Nav = () => {
 const StyledNav = styled.nav`
   display: flex;
   margin: auto;
+  overflow: hidden;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 10rem 0rem 10rem;
@@ -77,6 +89,7 @@ const StyledNav = styled.nav`
     display: flex;
     list-style: none;
     float: right;
+    overflow: hidden;
   }
   #headerlogo {
     width: 100%;
@@ -98,13 +111,23 @@ const StyledNav = styled.nav`
   #capture-nav a:hover {
     color: rgb(255, 175, 125);
   }
+  #smallnav {
+    display: none;
+  }
 
+  // Media Queries
   @media (max-width: 1300px) {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
     padding: 2rem 1rem;
+    justify-content: left;
     #logo {
       display: inline-block;
-      margin: 1rem;
+    }
+    #headerlogo {
+      width: 45vw;
+      margin-right: 2rem;
     }
     ul {
       padding: 2rem;
@@ -114,6 +137,90 @@ const StyledNav = styled.nav`
         padding: 0;
       }
     }
+    #capture-nav {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    #smallnav {
+      display: flex;
+      height: 8%;
+      width: 70px;
+    }
+    .toggle {
+      position: absolute;
+      top: 45px;
+      right: 5%;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+    }
+    #smallnav .bar {
+      height: 10%;
+      width: 100%;
+      margin-bottom: 5px;
+      background: white;
+      border-radius: 10px;
+      z-index: 100;
+    }
+
+    #main-nav {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    #main-nav ul {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    #main-nav li {
+      text-align: center;
+    }
+
+    #main-nav.active {
+      display: flex;
+      position: absolute;
+      overflow: hidden;
+      top: 19%;
+      right: -10%;
+      background: rgb(43, 24, 56);
+      height: 45vh;
+      width: 120vw;
+    }
+  }
+
+  @media (max-width: 540px) {
+    overflow: hidden;
+    #headerlogo {
+      width: 65vw;
+    }
+    #smallnav {
+      display: flex;
+      height: 5%;
+      width: 50px;
+    }
+    #smallnav .bar {
+      height: 10%;
+      width: 100%;
+      margin-bottom: 5px;
+      background: white;
+      border-radius: 10px;
+      z-index: 100;
+    }
+    /* #main-nav.active {
+      display: flex;
+      position: absolute;
+      overflow: hidden;
+      top: 15%;
+      right: -2%;
+      background: rgb(43, 24, 56);
+      height: 45vh;
+      width: 120vw;
+    } */
   }
 `;
 

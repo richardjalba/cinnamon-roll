@@ -15,6 +15,8 @@ const ContactSectionS = styled.div`
   padding: 0;
   height: 6em;
   display: flex;
+  width: 100vw;
+  overflow: hidden;
   align-items: center;
   text-align: center;
   justify-content: center;

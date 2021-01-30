@@ -20,6 +20,8 @@ const ShowcaseSection = () => {
 
 const ShowcaseSectionS = styled.div`
   display: flex;
+  width: 100vw;
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -57,6 +59,13 @@ const ShowcaseSectionS = styled.div`
   #ll img {
     width: 40vw;
     height: 48vh;
+  }
+  @media (max-width: 1024px) {
+    #ll {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 

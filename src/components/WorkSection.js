@@ -11,6 +11,8 @@ const WorkSection = () => {
 
 const WorkSectionS = styled.div`
   background: white;
+  width: 100%;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   height: 6em;

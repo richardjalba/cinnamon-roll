@@ -54,6 +54,25 @@ const GamesSectionS = styled.div`
     margin-right: auto;
     height: 100vh;
   }
+
+  @media (max-width: 1024px) {
+    #section-img {
+      width: auto;
+      height: 70vh;
+      max-height: 70vh;
+    }
+  }
+
+  @media (max-width: 720px) {
+    margin: 10px;
+    .game-entry img {
+      width: 40vw;
+      height: 25vh;
+    }
+    #section-img {
+      width: 60vw;
+    }
+  }
 `;
 
 export default GamesSection;

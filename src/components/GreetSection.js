@@ -38,6 +38,8 @@ const GreetStyle = styled.div`
   flex: column;
   justify-content: center;
   margin: 5% 0%;
+  width: 100vw;
+  overflow: hidden;
   font-family: 'Mitr', sans-serif;
   color: rgb(43, 24, 56);
 
@@ -91,6 +93,33 @@ const GreetStyle = styled.div`
     color: rgb(214, 97, 19);
     text-decoration: none;
   }
+
+  /* @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+  }
+  #mission {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 40vh;
+    align-items: center;
+  }
+  #mission p {
+    padding: 0 10%;
+  }
+  #crs-logo img {
+    position: absolute;
+    right: 30%;
+  }
+  #box-img {
+    margin-left: 40%;
+    margin-top: 20px;
+  }
+  #box-img img {
+    height: 40vh;
+    width: 45vw;
+  } */
 `;
 
 export default GreetSection;

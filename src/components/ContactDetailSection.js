@@ -59,6 +59,12 @@ const ContactDetailStyle = styled.div`
     width: 30vw;
     margin-left: 10px;
   }
+
+  @media (max-width: 700px) {
+    #section-img {
+      display: none;
+    }
+  }
 `;
 
 export default ContactDetailSection;
