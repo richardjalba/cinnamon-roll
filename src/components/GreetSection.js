@@ -7,7 +7,7 @@ const GreetSection = () => {
   return (
     <GreetStyle>
       <div id='mission'>
-        <h1>OUR MISSION</h1>
+        <h1>OUR STORY</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           asperiores laboriosam natus commodi aut, atque quo molestiae. Iure,
