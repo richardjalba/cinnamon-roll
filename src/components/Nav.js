@@ -211,7 +211,7 @@ const StyledNav = styled.nav`
       border-radius: 10px;
       z-index: 100;
     }
-    /* #main-nav.active {
+    #main-nav.active {
       display: flex;
       position: absolute;
       overflow: hidden;
@@ -220,7 +220,7 @@ const StyledNav = styled.nav`
       background: rgb(43, 24, 56);
       height: 45vh;
       width: 120vw;
-    } */
+    }
   }
 `;
 
