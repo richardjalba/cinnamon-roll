@@ -94,32 +94,21 @@ const GreetStyle = styled.div`
     text-decoration: none;
   }
 
-  /* @media (max-width: 1000px) {
-    display: flex;
-    flex-direction: column;
+  @media (max-width: 1024px) {
+    #mission {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0% 10%;
+    }
+
+    #crs-logo {
+      display: none;
+    }
+    #box-img {
+      display: none;
+    }
   }
-  #mission {
-    padding: 0px;
-    margin: 0px;
-    width: 100vw;
-    height: 40vh;
-    align-items: center;
-  }
-  #mission p {
-    padding: 0 10%;
-  }
-  #crs-logo img {
-    position: absolute;
-    right: 30%;
-  }
-  #box-img {
-    margin-left: 40%;
-    margin-top: 20px;
-  }
-  #box-img img {
-    height: 40vh;
-    width: 45vw;
-  } */
 `;
 
 export default GreetSection;

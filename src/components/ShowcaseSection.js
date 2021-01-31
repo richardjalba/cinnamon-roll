@@ -11,7 +11,10 @@ const ShowcaseSection = () => {
       <h1>WATCH THE TRAILER!</h1>
       <div id='ll'>
         <img id='ll-title-img' src={title} alt='' srcset='' />
-        <ReactPlayer url='hhttps://youtu.be/rqLvxOXKk5A' />
+        <ReactPlayer
+          className='react-player player-wrapper'
+          url='hhttps://youtu.be/rqLvxOXKk5A'
+        />
       </div>
       <h2>A VR Role-Playing Game... with a Twist!</h2>
     </ShowcaseSectionS>
@@ -41,7 +44,6 @@ const ShowcaseSectionS = styled.div`
     margin-bottom: 5%;
   }
   #ll-title-img {
-    width: 100%;
     display: block;
     max-width: 50vw;
     max-height: 95px;
@@ -55,18 +57,38 @@ const ShowcaseSectionS = styled.div`
   #ll {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 80vh;
   }
   #ll img {
-    width: 40vw;
-    height: 48vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
   @media (max-width: 1024px) {
     #ll {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
     }
   }
+  /* @media (max-width: 540px) {
+    #ll {
+      width: 80vw; */
+  /* .player-wrapper {
+        width: auto; // Reset width
+        height: auto; // Reset height
+      }
+      .react-player {
+        padding-top: 56.25%; // Percentage ratio for 16:9
+        position: relative; // Set to relative
+      } */
+  /* } */
+  /* } */
 `;
 
 export default ShowcaseSection;

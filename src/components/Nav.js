@@ -6,10 +6,9 @@ import { Link } from 'react-router-dom';
 import headerlogo from '../img/cinnamon-header.jpg';
 
 const Nav = () => {
-  const toggleNav = document.getElementById('main-nav');
-
   function clickHandler() {
-    toggleNav.classList.toggle('active');
+    console.log('CLICKED');
+    document.querySelector('#main-nav').classList.toggle('active');
   }
 
   return (
@@ -46,7 +45,7 @@ const Nav = () => {
           </ul>
         </div>
 
-        <div id='main-nav'>
+        <div className='' id='main-nav'>
           <ul>
             <li>
               <Link to='/'>HOME</Link>
@@ -66,6 +65,12 @@ const Nav = () => {
     </StyledNav>
   );
 };
+
+//
+///
+///
+///
+//
 
 const StyledNav = styled.nav`
   display: flex;
@@ -114,6 +119,23 @@ const StyledNav = styled.nav`
   #smallnav {
     display: none;
   }
+  .toggle {
+    position: absolute;
+    top: 45px;
+    right: 5%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  #smallnav .bar {
+    height: 10%;
+    width: 100%;
+    margin-bottom: 5px;
+    background: white;
+    border-radius: 10px;
+    z-index: 100;
+  }
 
   // Media Queries
   @media (max-width: 1300px) {
@@ -147,23 +169,6 @@ const StyledNav = styled.nav`
       display: flex;
       height: 8%;
       width: 70px;
-    }
-    .toggle {
-      position: absolute;
-      top: 45px;
-      right: 5%;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 30px;
-      height: 21px;
-    }
-    #smallnav .bar {
-      height: 10%;
-      width: 100%;
-      margin-bottom: 5px;
-      background: white;
-      border-radius: 10px;
-      z-index: 100;
     }
 
     #main-nav {

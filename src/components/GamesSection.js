@@ -70,7 +70,8 @@ const GamesSectionS = styled.div`
       height: 25vh;
     }
     #section-img {
-      width: 60vw;
+      width: 70%;
+      height: auto;
     }
   }
 `;
