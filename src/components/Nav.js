@@ -204,6 +204,7 @@ const StyledNav = styled.nav`
     #smallnav .bar {
       height: 10%;
       width: 100%;
+      overflow: hidden;
       margin-bottom: 5px;
       background: white;
       border-radius: 10px;
@@ -219,6 +220,10 @@ const StyledNav = styled.nav`
       height: 45vh;
       width: 120vw;
     }
+  }
+
+  @media (max-width: 400px) {
+    padding: 1.4rem 0rem 0rem 1.2rem;
   }
 `;
 
