@@ -14,6 +14,8 @@ const ShowcaseSection = () => {
         <ReactPlayer
           className='react-player player-wrapper'
           url='hhttps://youtu.be/rqLvxOXKk5A'
+          width='100%'
+          height='45vh'
         />
       </div>
       <h2>A VR Role-Playing Game... with a Twist!</h2>
@@ -74,21 +76,17 @@ const ShowcaseSectionS = styled.div`
       justify-content: center;
       align-items: center;
       width: 100%;
+      height: 65vh;
     }
   }
   /* @media (max-width: 540px) {
     #ll {
-      width: 80vw; */
-  /* .player-wrapper {
-        width: auto; // Reset width
-        height: auto; // Reset height
+      width: 80vw;
+      .player-wrapper {
+        
       }
-      .react-player {
-        padding-top: 56.25%; // Percentage ratio for 16:9
-        position: relative; // Set to relative
-      } */
-  /* } */
-  /* } */
+    }
+  } */
 `;
 
 export default ShowcaseSection;

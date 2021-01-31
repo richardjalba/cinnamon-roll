@@ -121,6 +121,11 @@ const StyledTeam = styled.div`
       height: 30vh;
       margin: 0.5rem;
     }
+    .team-entry p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.1rem;
+      padding-right: 5%;
+    }
   }
 `;
 
