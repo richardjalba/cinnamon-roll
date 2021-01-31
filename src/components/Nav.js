@@ -75,6 +75,7 @@ const Nav = () => {
 const StyledNav = styled.nav`
   display: flex;
   margin: auto;
+  max-width: 100%;
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
@@ -163,6 +164,8 @@ const StyledNav = styled.nav`
     }
   }
   @media (max-width: 1000px) {
+    width: 100vw;
+    overflow: hidden;
     #smallnav {
       display: flex;
       height: 8%;

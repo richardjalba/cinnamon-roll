@@ -25,6 +25,8 @@ const GamesSection = () => {
 };
 
 const GamesSectionS = styled.div`
+  width: 95vw;
+  overflow: hidden;
   margin: 5% 10% 0 10%;
 
   .game-entry {
@@ -56,20 +58,44 @@ const GamesSectionS = styled.div`
   }
 
   @media (max-width: 1024px) {
-    #section-img {
-      width: auto;
-      height: 70vh;
-      max-height: 70vh;
-    }
-  }
-
-  @media (max-width: 720px) {
     margin: 10px;
     .game-entry img {
       width: 40vw;
       height: 25vh;
     }
     #section-img {
+      width: 70%;
+      height: auto;
+    }
+    .desc p {
+      width: 85%;
+    }
+  }
+
+  @media (max-width: 720px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .game-entry {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+    .desc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .desc h1,
+    p {
+      margin: 0;
+    }
+    .game-entry img {
       width: 70%;
       height: auto;
     }
