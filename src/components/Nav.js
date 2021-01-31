@@ -136,7 +136,6 @@ const StyledNav = styled.nav`
     border-radius: 10px;
     z-index: 100;
   }
-
   // Media Queries
   @media (max-width: 1300px) {
     display: flex;
@@ -163,29 +162,24 @@ const StyledNav = styled.nav`
       display: none;
     }
   }
-
   @media (max-width: 1000px) {
     #smallnav {
       display: flex;
       height: 8%;
       width: 70px;
     }
-
     #main-nav {
       display: none;
       flex-direction: column;
       align-items: flex-start;
     }
-
     #main-nav ul {
       flex-direction: column;
       width: 100%;
     }
-
     #main-nav li {
       text-align: center;
     }
-
     #main-nav.active {
       display: flex;
       position: absolute;
@@ -197,7 +191,6 @@ const StyledNav = styled.nav`
       width: 120vw;
     }
   }
-
   @media (max-width: 540px) {
     overflow: hidden;
     #headerlogo {

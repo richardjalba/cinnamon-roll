@@ -30,6 +30,13 @@ const WorkSectionS = styled.div`
   img {
     width: 5vw;
   }
+  @media (max-width: 540px) {
+    h2 {
+      display: flex;
+      font-size: inherit;
+      padding: 0;
+    }
+  }
 `;
 
 export default WorkSection;

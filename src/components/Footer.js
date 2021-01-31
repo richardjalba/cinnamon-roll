@@ -14,19 +14,32 @@ const Footer = () => {
 
 const FooterS = styled.div`
   font-family: 'Mitr', sans-serif;
-  height: 20vh;
+  height: 10vh;
   background: rgb(43, 24, 56);
   display: flex;
+  flex-direction: row;
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-size: 1.3rem;
+  width: 100vw;
+  overflow: hidden;
+  font-size: auto;
   color: white;
   span {
     margin: 0.2rem;
   }
   h3 {
     display: flex;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 540px) {
+    height: 11vh;
+    h3 {
+      display: flex;
+      font-size: 1.3rem;
+      padding: 0;
+    }
   }
 `;
 
